@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--
+  Styles By Rashaad — barber demo site (research-to-website pipeline)
+  VERIFIED (Booksy): name, owner Rashaad Greenwood, 38750 Trade Center Dr Ste I Palmdale 93551,
+    4.9* / 417 reviews, full service+price list, verbatim review quotes, IG @styles_by_rashaad.
+  Booking: Booksy (real public URL wired to Book buttons). No public phone or posted hours found → none shown.
+  OWNER MUST CONFIRM before launch:
+    - shop hours (omitted — none verified) · real phone if he wants a call button
+    - real photos for the marked gallery slots + og:image · domain for canonical/schema url
+    - prices current? (shown "as posted on Booksy — book to confirm")
+    - swap the public Booksy LINK for his embeddable Booksy WIDGET (Business Settings > Online Booking > Your Website)
+  No fabricated facts. Review quotes are verbatim from Booksy, attributed, no reviewer names.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script>document.documentElement.classList.add('js')</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2315130f'/%3E%3Ctext x='12' y='17' font-family='Arial Black,Arial' font-size='14' font-weight='900' text-anchor='middle' fill='%23d6a23e'%3ER%3C/text%3E%3C/svg%3E" />
+<title>Styles By Rashaad | Barber in Palmdale, CA — Antelope Valley</title>
+<meta name="description" content="Sharp cuts, on time and on point. Styles By Rashaad — barber in Palmdale (Antelope Valley). Haircuts, beards, color, man units. 4.9★ across 417 reviews. Book on Booksy." />
+<meta name="theme-color" content="#15130f" />
+<meta property="og:title" content="Styles By Rashaad — Barber in Palmdale, CA" />
+<meta property="og:description" content="Sharp cuts, on time, on point. 4.9★ · 417 reviews. Book on Booksy." />
+<meta property="og:type" content="website" />
+<!-- TODO(owner): og:image + canonical once domain chosen -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["HairSalon","LocalBusiness"],
+  "name":"Styles By Rashaad",
+  "description":"Barber in Palmdale, CA — haircuts, beards, color, and man units. Booking via Booksy.",
+  "address":{"@type":"PostalAddress","streetAddress":"38750 Trade Center Dr, Ste I","addressLocality":"Palmdale","addressRegion":"CA","postalCode":"93551","addressCountry":"US"},
+  "areaServed":["Palmdale, CA","Lancaster, CA","Antelope Valley, CA"],
+  "priceRange":"$$",
+  "sameAs":["https://instagram.com/styles_by_rashaad","https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale"],
+  "makesOffer":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut"},"price":"30.00","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Haircut and Beard"},"price":"31.50","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Beard Trim"},"price":"13.50","priceCurrency":"USD"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --ink:#15130f; --ink-2:#1f1b14; --ink-3:#2a241b; --cream:#f4efe4; --cream-2:#ece4d4;
+    --amber:#d6a23e; --amber-dk:#a87b22; --muted-d:#5c5547; --muted-l:#b7ad9b;
+    --red:#bb3a2f; --blue:#2f5aa0; --line:#ddd4c2; --line-d:rgba(255,255,255,.12);
+    --maxw:1100px; --r:16px;
+    --ff-d:"Anton",Impact,sans-serif; --ff:"Manrope",system-ui,sans-serif; --ff-m:"Space Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--ff);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{margin:0;font-family:var(--ff-d);font-weight:400;letter-spacing:.01em;line-height:.98;text-transform:uppercase}
+  p{margin:0}a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,40px)}
+  .skip{position:absolute;left:-999px;top:0;background:var(--amber);color:var(--ink);padding:10px 16px;border-radius:0 0 10px 0;z-index:100;font-weight:700}
+  .skip:focus{left:0}
+  :focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+  /* barber pole stripe */
+  .pole{background:repeating-linear-gradient(45deg,var(--red) 0 10px,#fff 10px 20px,var(--blue) 20px 30px,#fff 30px 40px);background-size:100% 56.6px}
+  .js .pole{animation:slide 2.4s linear infinite}
+  @keyframes slide{to{background-position:0 -56.6px}}
+
+  .btn{display:inline-flex;align-items:center;gap:.5em;min-height:50px;padding:.75em 1.4em;border-radius:8px;font-weight:800;text-decoration:none;font-size:1rem;letter-spacing:.01em;transition:transform .15s,box-shadow .15s}
+  .btn-pri{background:var(--amber);color:var(--ink);box-shadow:0 8px 22px -8px rgba(214,162,62,.7)}
+  .btn-pri:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(214,162,62,.85)}
+  .btn-out{background:transparent;color:var(--cream);border:1.5px solid rgba(255,255,255,.3)}
+  .btn-out:hover{transform:translateY(-2px);border-color:var(--amber);color:var(--amber)}
+  .btn-dark{background:var(--ink);color:var(--cream)}.btn-dark:hover{transform:translateY(-2px)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:rgba(21,19,15,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-d)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 0}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--cream)}
+  .brand .r{width:38px;height:38px;border-radius:9px;background:var(--ink-3);display:grid;place-items:center;font-family:var(--ff-d);color:var(--amber);font-size:1.4rem;border:1px solid var(--line-d)}
+  .brand b{font-family:var(--ff-d);font-weight:400;font-size:1.15rem;letter-spacing:.03em;text-transform:uppercase;color:var(--cream)}
+  .nav-links{display:flex;gap:26px;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .nav-links a{text-decoration:none;color:var(--muted-l)}.nav-links a:hover{color:var(--amber)}
+  @media(max-width:760px){.nav-links{display:none}}
+  @media(max-width:430px){.brand b{font-size:1rem}}
+
+  /* hero */
+  .hero{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+  .hero .pole{position:absolute;top:0;left:0;width:10px;height:100%}
+  .hero-in{padding:clamp(54px,9vw,110px) 0;max-width:760px}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:22px}
+  h1{font-size:clamp(3rem,10vw,6.4rem)}
+  h1 span{color:var(--amber)}
+  .sub{margin:22px 0 6px;font-size:clamp(1.05rem,2.3vw,1.25rem);color:#d8cfbf;max-width:44ch}
+  .rate{display:inline-flex;align-items:center;gap:10px;margin:22px 0 30px;font-weight:700}
+  .rate .s{color:var(--amber);letter-spacing:2px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+  /* marquee */
+  .marq{background:var(--amber);color:var(--ink);overflow:hidden;white-space:nowrap;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .marq .track{display:inline-block;padding:12px 0;font-family:var(--ff-d);font-size:1.1rem;letter-spacing:.04em;text-transform:uppercase}
+  .marq .track span{margin:0 26px;opacity:.9}
+  .js .marq .track{animation:scroll 24s linear infinite}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+
+  section{padding:clamp(56px,8vw,92px) 0}
+  .kicker{font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-dk);margin-bottom:12px}
+  .sec-head h2{font-size:clamp(2rem,5vw,3.2rem)}
+  .sec-head{max-width:40ch;margin-bottom:40px}
+  .sec-head p{color:var(--muted-d);margin-top:14px;font-size:1.08rem}
+
+  /* about */
+  .about{background:var(--cream-2)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+  .about-grid h2{font-size:clamp(1.9rem,4.5vw,2.8rem)}
+  .about-grid p{color:var(--muted-d);margin-top:16px;font-size:1.08rem;max-width:46ch}
+  .sig{font-family:var(--ff-d);color:var(--amber-dk);font-size:1.6rem;margin-top:18px;text-transform:uppercase;letter-spacing:.02em}
+  .about-card{background:var(--ink);color:var(--cream);border-radius:20px;padding:34px;position:relative;overflow:hidden}
+  .about-card .pole{position:absolute;top:0;right:0;width:8px;height:100%}
+  .about-card .big{font-family:var(--ff-d);font-size:clamp(2.4rem,6vw,3.4rem);color:var(--amber);line-height:.9}
+  .about-card .lbl{color:var(--muted-l);text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;font-weight:700;margin-top:6px}
+  .about-card hr{border:none;border-top:1px solid var(--line-d);margin:22px 0}
+  @media(max-width:780px){.about-grid{grid-template-columns:1fr;gap:28px}}
+
+  /* prices */
+  .menu{display:grid;grid-template-columns:1fr 1fr;gap:8px 48px}
+  .row{display:flex;align-items:baseline;gap:10px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .row .nm{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .dur{font-size:.78rem;color:var(--muted-d);font-weight:600;margin-left:2px}
+  .row .lead{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px);min-width:14px}
+  .row .pr{font-family:var(--ff-m);font-weight:700;color:var(--ink)}
+  .menu-note{margin-top:22px;color:var(--muted-d);font-size:.9rem}
+  @media(max-width:680px){.menu{grid-template-columns:1fr;gap:0}}
+
+  /* gallery */
+  .gallery{background:var(--ink);color:var(--cream)}
+  .gallery .sec-head h2{color:var(--cream)}.gallery .sec-head p{color:var(--muted-l)}
+  .gal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+  .shot{aspect-ratio:4/5;border-radius:12px;background:linear-gradient(150deg,var(--ink-2),var(--ink-3));border:1px solid var(--line-d);display:grid;place-items:center;text-align:center;color:var(--muted-l);font-size:.8rem;font-weight:600;padding:14px}
+  .shot svg{opacity:.5;margin-bottom:8px}
+  .ig-cta{margin-top:26px;text-align:center}
+
+  /* reviews */
+  .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .rev{background:var(--cream-2);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .rev .q{font-size:1.05rem;font-weight:600;color:var(--ink)}
+  .rev .by{margin-top:12px;font-size:.82rem;color:var(--muted-d);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .rev .s{color:var(--amber-dk);letter-spacing:1px}
+
+  /* visit / book */
+  .visit{background:var(--ink);color:var(--cream)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+  .visit h2{color:var(--cream);font-size:clamp(2rem,5vw,3.2rem)}
+  .visit p{color:#d8cfbf;margin-top:14px;font-size:1.08rem}
+  .visit .addr{font-family:var(--ff-m);color:var(--amber);margin-top:18px;font-size:.95rem}
+  .visit .cta-row{margin-top:26px}
+  @media(max-width:780px){.visit-grid{grid-template-columns:1fr;gap:24px}}
+
+  footer{background:var(--ink);color:var(--muted-l);padding:30px 0 56px;border-top:1px solid var(--line-d)}
+  .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
+  footer a{color:var(--amber);text-decoration:none}
+
+  .reveal{will-change:opacity,transform}
+  .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.js .reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Styles By Rashaad, home">
+      <span class="r" aria-hidden="true">R</span><b>Styles By Rashaad</b>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a><a href="#prices">Prices</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn-pri" href="https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale" rel="noopener" target="_blank">Book now</a>
+  </div>
+</header>
+
+<main id="main"><a id="top"></a>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="h1">
+  <span class="pole" aria-hidden="true"></span>
+  <div class="wrap hero-in reveal in">
+    <span class="eyebrow">Palmdale · Antelope Valley</span>
+    <h1 id="h1">Sharp cuts.<br><span>On time. On point.</span></h1>
+    <p class="sub">Styles By Rashaad — haircuts, beards, color and man units from Rashaad&rsquo;s chair in Palmdale. Book your time, walk out fresh.</p>
+    <p class="rate"><span class="s" aria-hidden="true">★★★★★</span> <b>4.9</b> · 417 reviews on Booksy</p>
+    <div class="cta-row">
+      <a class="btn btn-pri" href="https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale" rel="noopener" target="_blank">Book on Booksy</a>
+      <a class="btn btn-out" href="#prices">See prices</a>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq" aria-hidden="true">
+  <div class="track">
+    <span>★ On time, on point</span><span>★ Great with kids</span><span>★ Cuts · Beards · Color · Man units</span><span>★ 4.9 on Booksy</span>
+    <span>★ On time, on point</span><span>★ Great with kids</span><span>★ Cuts · Beards · Color · Man units</span><span>★ 4.9 on Booksy</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <p class="kicker">The barber</p>
+      <h2>Rashaad&rsquo;s chair.</h2>
+      <p>From clean fades and beard work to color and man units, Rashaad does the full range — and the reviews say the same thing over and over: on time, professional, and great with the kids.</p>
+      <p>Reasonable prices, real attention, and a cut that listens to what you actually want.</p>
+      <p class="sig">— Rashaad</p>
+    </div>
+    <div class="about-card reveal" aria-hidden="false">
+      <span class="pole" aria-hidden="true"></span>
+      <div class="big">4.9★</div><div class="lbl">across 417 Booksy reviews</div>
+      <hr>
+      <div class="big">12+</div><div class="lbl">services · cuts to color to units</div>
+      <hr>
+      <div class="big">$13.50</div><div class="lbl">line-ups &amp; beard trims start here</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices">
+  <div class="wrap">
+    <div class="sec-head reveal"><p class="kicker">Services &amp; prices</p><h2>The menu.</h2><p>Straight pricing, no surprises — book any of these on Booksy.</p></div>
+    <div class="menu reveal">
+      <div class="row"><span class="nm">Haircut <span class="dur">30min</span></span><span class="lead"></span><span class="pr">$30</span></div>
+      <div class="row"><span class="nm">Haircut &amp; Beard <span class="dur">30min</span></span><span class="lead"></span><span class="pr">$31.50</span></div>
+      <div class="row"><span class="nm">Kids cut · 10 &amp; under <span class="dur">15min</span></span><span class="lead"></span><span class="pr">$25</span></div>
+      <div class="row"><span class="nm">Shampoo · Cut · Shave &amp; enhance <span class="dur">45min</span></span><span class="lead"></span><span class="pr">$45</span></div>
+      <div class="row"><span class="nm">Enhancement Spray w/ Cut <span class="dur">30min</span></span><span class="lead"></span><span class="pr">$36</span></div>
+      <div class="row"><span class="nm">Cut &amp; Color <span class="dur">1h 30</span></span><span class="lead"></span><span class="pr">$90</span></div>
+      <div class="row"><span class="nm">Texturizer <span class="dur">45min</span></span><span class="lead"></span><span class="pr">$40.50+</span></div>
+      <div class="row"><span class="nm">Frontal Man Unit <span class="dur">1h 30</span></span><span class="lead"></span><span class="pr">$90</span></div>
+      <div class="row"><span class="nm">Man Unit / Man Weave <span class="dur">1h 30</span></span><span class="lead"></span><span class="pr">$270+</span></div>
+      <div class="row"><span class="nm">Beard Trim <span class="dur">15min</span></span><span class="lead"></span><span class="pr">$13.50</span></div>
+      <div class="row"><span class="nm">Line Up <span class="dur">5min</span></span><span class="lead"></span><span class="pr">$13.50</span></div>
+      <div class="row"><span class="nm">Shave <span class="dur">15min</span></span><span class="lead"></span><span class="pr">$13.50</span></div>
+    </div>
+    <p class="menu-note reveal">Prices as posted on Booksy — book to confirm current pricing &amp; availability.</p>
+    <div class="reveal" style="margin-top:26px"><a class="btn btn-dark" href="https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale" rel="noopener" target="_blank">Book a service →</a></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal"><p class="kicker" style="color:var(--amber)">The work</p><h2>Fresh every chair.</h2><p>See the latest cuts on Instagram — fades, beards, color and units.</p></div>
+    <div class="gal-grid">
+      <div class="shot reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Add a real cut photo</div>
+      <div class="shot reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Add a real cut photo</div>
+      <div class="shot reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Add a real cut photo</div>
+      <div class="shot reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.5"/></svg>Add a real cut photo</div>
+    </div>
+    <div class="ig-cta reveal"><a class="btn btn-out" href="https://instagram.com/styles_by_rashaad" rel="noopener" target="_blank">@styles_by_rashaad on Instagram →</a></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal"><p class="kicker">What clients say</p><h2>4.9 stars, 417 deep.</h2></div>
+    <div class="rev-grid">
+      <div class="rev reveal"><p class="s" aria-hidden="true">★★★★★</p><p class="q">&ldquo;Always on time &amp; on point. Great customer service in a friendly environment.&rdquo;</p><p class="by">— Booksy review</p></div>
+      <div class="rev reveal"><p class="s" aria-hidden="true">★★★★★</p><p class="q">&ldquo;Great barber!! He does an amazing job with my son. Highly recommend!&rdquo;</p><p class="by">— Booksy review</p></div>
+      <div class="rev reveal"><p class="s" aria-hidden="true">★★★★★</p><p class="q">&ldquo;Cuts very well, really reasonable, and listens to the parents.&rdquo;</p><p class="by">— Booksy review</p></div>
+    </div>
+    <p class="menu-note reveal" style="margin-top:24px"><a href="https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale" rel="noopener" target="_blank" style="color:var(--amber-dk);font-weight:700">Read all 417 reviews on Booksy →</a></p>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="wrap visit-grid">
+    <div class="reveal">
+      <p class="kicker" style="color:var(--amber)">Visit / book</p>
+      <h2>Pull up to the chair.</h2>
+      <p>Book your time on Booksy and see live availability — no calls, no waiting on a text back.</p>
+      <p class="addr">📍 38750 Trade Center Dr, Ste I · Palmdale, CA 93551</p>
+      <div class="cta-row">
+        <a class="btn btn-pri" href="https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale" rel="noopener" target="_blank">Book on Booksy</a>
+        <a class="btn btn-out" href="https://www.google.com/maps/search/?api=1&query=Styles+By+Rashaad+38750+Trade+Center+Dr+Palmdale+CA+93551" rel="noopener" target="_blank">Get directions</a>
+      </div>
+    </div>
+    <div class="about-card reveal" style="background:var(--ink-2)">
+      <span class="pole" aria-hidden="true"></span>
+      <div class="big" style="font-size:2rem">Booking</div>
+      <div class="lbl">Powered by his Booksy — your calendar, reviews &amp; clients stay put</div>
+      <hr>
+      <p style="color:#d8cfbf;font-size:.95rem">This site is the front door; Booksy stays the engine. On launch, your live Booksy <em>booking widget</em> drops right into this page.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <a class="brand" href="#top" aria-label="Styles By Rashaad, home" style="color:var(--cream)">
+      <span class="r" aria-hidden="true">R</span><b>Styles By Rashaad</b>
+    </a>
+    <div>Palmdale, CA · <a href="https://instagram.com/styles_by_rashaad" rel="noopener" target="_blank">@styles_by_rashaad</a> · <a href="https://booksy.com/en-us/120268_styles-by-rashaad_barber-shop_103850_palmdale" rel="noopener" target="_blank">Book on Booksy</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal:not(.in)');
+  if(rm||!('IntersectionObserver'in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
